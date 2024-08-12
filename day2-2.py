@@ -9,7 +9,7 @@ from typing import List
 app = FastAPI(tags = ["EMployee-details"],
     prefix = "/employee")
 
-SQLALCHEMY_DATABASE_URL = 'postgresql:///./product1.db'
+SQLALCHEMY_DATABASE_URL = 'sqlite:///./product1.db'
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL,connect_args= {
     'check_same_thread': False
